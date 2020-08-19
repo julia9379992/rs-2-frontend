@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "застройщик",
+      "displayAttributeName": "наименование",
+      "required": true,
+      "relationName": "Застройщик.Застройщик",
+      "projection": "ОрганизацияL",
+      "detailModelName": "i-i-s-r-s-2-застройщик"
+    }
+  ],
+  "external": false,
+  "caption": "Разреш на строит",
+  "name": "IISRS_2РазрешНаСтроитE",
+  "className": "РазрешНаСтроитE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-r-s-2-разреш-на-строит",
+      "modelProjection": "РазрешНаСтроитE"
+    }
+  ]
+}

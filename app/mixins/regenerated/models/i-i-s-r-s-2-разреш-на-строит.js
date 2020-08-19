@@ -2,6 +2,7 @@ import Mixin from '@ember/object/mixin';
 import $ from 'jquery';
 import DS from 'ember-data';
 import { validator } from 'ember-cp-validations';
+import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
   наименование: DS.attr('string'),
@@ -60,4 +61,32 @@ export let ValidationRules = {
       validator('has-many'),
     ],
   },
+};
+
+export let defineProjections = function (modelClass) {
+  modelClass.defineProjection('РазрешНаСтроитE', 'i-i-s-r-s-2-разреш-на-строит', {
+    наименование: attr('Наименование', { index: 0 }),
+    видРазрешения: attr('Вид разрешения', { index: 1 }),
+    архив: attr('Архив', { index: 2 }),
+    датаРазрешения: attr('Дата разрешения', { index: 3 }),
+    номерРазрешения: attr('Номер разрешения', { index: 4 }),
+    объектСтроит: hasMany('i-i-s-r-s-2-объект-строит', 'Объект строит', {
+      наименование: attr('Наименование', { index: 0 }),
+      адрес: attr('Адрес', { index: 1 })
+    }),
+    застройщик: hasMany('i-i-s-r-s-2-застройщик', 'Застройщик', {
+      основной: attr('Основной', { index: 0 }),
+      застройщик: belongsTo('i-i-s-r-s-2-организация', 'Застройщик', {
+        наименование: attr('Наименование', { index: 2, hidden: true })
+      }, { index: 1, displayMemberPath: 'наименование' })
+    })
+  });
+
+  modelClass.defineProjection('РазрешНаСтроитL', 'i-i-s-r-s-2-разреш-на-строит', {
+    наименование: attr('Наименование', { index: 0 }),
+    видРазрешения: attr('Вид разрешения', { index: 1 }),
+    архив: attr('Архив', { index: 2 }),
+    датаРазрешения: attr('Дата разрешения', { index: 3 }),
+    номерРазрешения: attr('Номер разрешения', { index: 4 })
+  });
 };

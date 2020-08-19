@@ -19,7 +19,23 @@ export default Controller.extend({
           caption: i18n.t('forms.application.sitemap.index.caption'),
           title: i18n.t('forms.application.sitemap.index.title'),
           children: null
-        }, 
+        }, {
+          link: null,
+          icon: 'list',
+          caption: i18n.t('forms.application.sitemap.r-s-2.caption'),
+          title: i18n.t('forms.application.sitemap.r-s-2.title'),
+          children: [{
+            link: 'i-i-s-r-s-2-организация-l',
+            caption: i18n.t('forms.application.sitemap.r-s-2.i-i-s-r-s-2-организация-l.caption'),
+            title: i18n.t('forms.application.sitemap.r-s-2.i-i-s-r-s-2-организация-l.title'),
+            children: null
+          }, {
+            link: 'i-i-s-r-s-2-разреш-на-строит-l',
+            caption: i18n.t('forms.application.sitemap.r-s-2.i-i-s-r-s-2-разреш-на-строит-l.caption'),
+            title: i18n.t('forms.application.sitemap.r-s-2.i-i-s-r-s-2-разреш-на-строит-l.title'),
+            children: null
+          }]
+        }
       ]
     };
   }),

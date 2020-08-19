@@ -1,6 +1,10 @@
 import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/en/translations';
 
+import IISRS_2ОрганизацияLForm from './forms/i-i-s-r-s-2-организация-l';
+import IISRS_2РазрешНаСтроитLForm from './forms/i-i-s-r-s-2-разреш-на-строит-l';
+import IISRS_2ОрганизацияEForm from './forms/i-i-s-r-s-2-организация-e';
+import IISRS_2РазрешНаСтроитEForm from './forms/i-i-s-r-s-2-разреш-на-строит-e';
 import IISRS_2ЗастройщикModel from './models/i-i-s-r-s-2-застройщик';
 import IISRS_2ОбъектСтроитModel from './models/i-i-s-r-s-2-объект-строит';
 import IISRS_2ОрганизацияModel from './models/i-i-s-r-s-2-организация';
@@ -80,7 +84,18 @@ $.extend(true, translations, {
           caption: 'Home',
           title: ''
         },
-
+        'r-s-2': {
+          caption: 'r-s-2',
+          title: 'r-s-2',
+          'i-i-s-r-s-2-организация-l': {
+            caption: 'i-i-s-r-s-2-организация-l',
+            title: 'i-i-s-r-s-2-организация-l'
+          },
+          'i-i-s-r-s-2-разреш-на-строит-l': {
+            caption: 'i-i-s-r-s-2-разреш-на-строит-l',
+            title: 'i-i-s-r-s-2-разреш-на-строит-l'
+          }
+        }
       }
     },
 
@@ -92,7 +107,10 @@ $.extend(true, translations, {
       'delete-success-message': 'Object deleted',
       'delete-error-message-caption': 'Delete operation failed'
     },
-
+    'i-i-s-r-s-2-организация-l': IISRS_2ОрганизацияLForm,
+    'i-i-s-r-s-2-разреш-на-строит-l': IISRS_2РазрешНаСтроитLForm,
+    'i-i-s-r-s-2-организация-e': IISRS_2ОрганизацияEForm,
+    'i-i-s-r-s-2-разреш-на-строит-e': IISRS_2РазрешНаСтроитEForm
   },
 
 });

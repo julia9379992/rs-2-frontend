@@ -1,6 +1,29 @@
 ﻿{
-  "applicationCaption": null,
-  "applicationTitle": null,
-  "items": [],
+  "applicationCaption": "R s_2",
+  "applicationTitle": "R s_2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "r-s-2",
+      "caption": "RS_2",
+      "title": "RS_2",
+      "children": [
+        {
+          "link": "i-i-s-r-s-2-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-r-s-2-разреш-на-строит-l",
+          "menuName": null,
+          "caption": "Разреш на строит",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
   "mobile": true
 }

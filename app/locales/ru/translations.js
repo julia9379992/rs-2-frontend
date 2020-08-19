@@ -1,6 +1,10 @@
 import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations';
 
+import IISRS_2ОрганизацияLForm from './forms/i-i-s-r-s-2-организация-l';
+import IISRS_2РазрешНаСтроитLForm from './forms/i-i-s-r-s-2-разреш-на-строит-l';
+import IISRS_2ОрганизацияEForm from './forms/i-i-s-r-s-2-организация-e';
+import IISRS_2РазрешНаСтроитEForm from './forms/i-i-s-r-s-2-разреш-на-строит-e';
 import IISRS_2ЗастройщикModel from './models/i-i-s-r-s-2-застройщик';
 import IISRS_2ОбъектСтроитModel from './models/i-i-s-r-s-2-объект-строит';
 import IISRS_2ОрганизацияModel from './models/i-i-s-r-s-2-организация';
@@ -17,7 +21,7 @@ $.extend(true, translations, {
     'i-i-s-r-s-2-разреш-на-строит': IISRS_2РазрешНаСтроитModel
   },
 
-  'application-name': '',
+  'application-name': 'R s_2',
 
   forms: {
     loading: {
@@ -56,7 +60,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': '',
+        'application-name': 'R s_2',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -67,8 +71,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: '',
-          title: ''
+          caption: 'R s_2',
+          title: 'R s_2'
         },
         'application-version': {
           caption: 'Версия аддона {{version}}',
@@ -80,7 +84,18 @@ $.extend(true, translations, {
           caption: 'Главная',
           title: ''
         },
-
+        'r-s-2': {
+          caption: 'RS_2',
+          title: 'RS_2',
+          'i-i-s-r-s-2-организация-l': {
+            caption: 'Организация',
+            title: ''
+          },
+          'i-i-s-r-s-2-разреш-на-строит-l': {
+            caption: 'Разреш на строит',
+            title: ''
+          }
+        }
       }
     },
 
@@ -92,7 +107,10 @@ $.extend(true, translations, {
       'delete-success-message': 'Объект удален',
       'delete-error-message-caption': 'Ошибка удаления'
     },
-
+    'i-i-s-r-s-2-организация-l': IISRS_2ОрганизацияLForm,
+    'i-i-s-r-s-2-разреш-на-строит-l': IISRS_2РазрешНаСтроитLForm,
+    'i-i-s-r-s-2-организация-e': IISRS_2ОрганизацияEForm,
+    'i-i-s-r-s-2-разреш-на-строит-e': IISRS_2РазрешНаСтроитEForm
   },
 
 });

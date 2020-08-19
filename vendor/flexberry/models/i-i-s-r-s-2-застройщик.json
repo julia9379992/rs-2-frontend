@@ -33,7 +33,44 @@
     }
   ],
   "hasMany": [],
-  "projections": [],
+  "projections": [
+    {
+      "name": "ЗастройщикE",
+      "modelName": "i-i-s-r-s-2-застройщик",
+      "attrs": [
+        {
+          "name": "основной",
+          "caption": "Основной",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Застройщик",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Застройщик",
+          "name": "застройщик",
+          "relatedTo": "i-i-s-r-s-2-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
   "stored": true,
   "offline": true,
   "external": false

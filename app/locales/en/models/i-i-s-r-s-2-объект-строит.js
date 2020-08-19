@@ -1,5 +1,13 @@
 export default {
   projections: {
+    ОбъектСтроитE: {
+      наименование: {
+        __caption__: 'наименование'
+      },
+      адрес: {
+        __caption__: 'адрес'
+      }
+    }
   },
   validations: {
     наименование: {
