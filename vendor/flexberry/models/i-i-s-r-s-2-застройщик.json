@@ -1,0 +1,40 @@
+﻿{
+  "name": "IISRS_2Застройщик",
+  "modelName": "i-i-s-r-s-2-застройщик",
+  "className": "Застройщик",
+  "nameSpace": "IIS.RS_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "основной",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "застройщик",
+      "relatedTo": "i-i-s-r-s-2-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "разрешение",
+      "relatedTo": "i-i-s-r-s-2-разреш-на-строит",
+      "inverse": "застройщик"
+    }
+  ],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

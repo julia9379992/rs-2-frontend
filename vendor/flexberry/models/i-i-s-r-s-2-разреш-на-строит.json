@@ -1,0 +1,72 @@
+﻿{
+  "name": "IISRS_2РазрешНаСтроит",
+  "modelName": "i-i-s-r-s-2-разреш-на-строит",
+  "className": "РазрешНаСтроит",
+  "nameSpace": "IIS.RS_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "видРазрешения",
+      "type": "i-i-s-r-s-2-t-вид-разрешения",
+      "flexberryType": "tВидРазрешения",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "архив",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаРазрешения",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерРазрешения",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "объектСтроит",
+      "relatedTo": "i-i-s-r-s-2-объект-строит",
+      "inverse": "разрешение"
+    },
+    {
+      "name": "застройщик",
+      "relatedTo": "i-i-s-r-s-2-застройщик",
+      "inverse": "разрешение"
+    }
+  ],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
