@@ -8,8 +8,8 @@
   "attrs": [
     {
       "name": "основной",
-      "type": "boolean",
-      "flexberryType": "bool",
+      "type": "string",
+      "flexberryType": "boolean",
       "notNull": false,
       "defaultValue": "",
       "stored": true,
