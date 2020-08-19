@@ -6,7 +6,7 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   основной: DS.attr('boolean'),
-  застройщик: DS.belongsTo('i-i-s-r-s-2-организация', { inverse: null, async: false }),
+  организЗастр: DS.belongsTo('i-i-s-r-s-2-организация', { inverse: null, async: false }),
   разрешение: DS.belongsTo('i-i-s-r-s-2-разреш-на-строит', { inverse: 'застройщик', async: false })
 });
 
@@ -17,8 +17,8 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
-  застройщик: {
-    descriptionKey: 'models.i-i-s-r-s-2-застройщик.validations.застройщик.__caption__',
+  организЗастр: {
+    descriptionKey: 'models.i-i-s-r-s-2-застройщик.validations.организЗастр.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),
@@ -35,9 +35,6 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ЗастройщикE', 'i-i-s-r-s-2-застройщик', {
-    основной: attr('Основной', { index: 0 }),
-    застройщик: belongsTo('i-i-s-r-s-2-организация', 'Застройщик', {
-      наименование: attr('Наименование', { index: 2, hidden: true })
-    }, { index: 1, displayMemberPath: 'наименование' })
+    основной: attr('Основной', { index: 0 })
   });
 };

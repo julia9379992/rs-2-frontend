@@ -20,7 +20,7 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "застройщик",
+      "name": "организЗастр",
       "relatedTo": "i-i-s-r-s-2-организация",
       "inverse": null
     },
@@ -45,29 +45,7 @@
           "index": 0
         }
       ],
-      "belongsTo": [
-        {
-          "lookupValue": "Наименование",
-          "lookupValueField": "наименование",
-          "relationName": "Застройщик",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "наименование",
-              "caption": "Наименование",
-              "hidden": true,
-              "index": 2
-            }
-          ],
-          "index": 1,
-          "type": "standard",
-          "caption": "Застройщик",
-          "name": "застройщик",
-          "relatedTo": "i-i-s-r-s-2-организация",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     }
   ],

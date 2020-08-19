@@ -75,10 +75,7 @@ export let defineProjections = function (modelClass) {
       адрес: attr('Адрес', { index: 1 })
     }),
     застройщик: hasMany('i-i-s-r-s-2-застройщик', 'Застройщик', {
-      основной: attr('Основной', { index: 0 }),
-      застройщик: belongsTo('i-i-s-r-s-2-организация', 'Застройщик', {
-        наименование: attr('Наименование', { index: 2, hidden: true })
-      }, { index: 1, displayMemberPath: 'наименование' })
+      основной: attr('Основной', { index: 0 })
     })
   });
 
