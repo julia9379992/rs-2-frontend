@@ -1,14 +1,5 @@
 ﻿{
-  "propertyLookup": [
-    {
-      "master": null,
-      "displayAttributeName": null,
-      "required": false,
-      "relationName": "Застройщик.Разрешение",
-      "projection": "ОрганизацияL",
-      "detailModelName": null
-    }
-  ],
+  "propertyLookup": [],
   "external": false,
   "caption": "Разреш на строит",
   "name": "IISRS_2РазрешНаСтроитE",

@@ -11,7 +11,7 @@ export let Model = Mixin.create({
   датаРазрешения: DS.attr('date'),
   номерРазрешения: DS.attr('number'),
   объектСтроит: DS.hasMany('i-i-s-r-s-2-объект-строит', { inverse: 'разрешение', async: false }),
-  застройщик: DS.hasMany('i-i-s-r-s-2-застройщик', { inverse: 'разрешение', async: false })
+  застройщОрг: DS.hasMany('i-i-s-r-s-2-застройщ-орг', { inverse: 'разрешение', async: false })
 });
 
 export let ValidationRules = {
@@ -54,8 +54,8 @@ export let ValidationRules = {
       validator('has-many'),
     ],
   },
-  застройщик: {
-    descriptionKey: 'models.i-i-s-r-s-2-разреш-на-строит.validations.застройщик.__caption__',
+  застройщОрг: {
+    descriptionKey: 'models.i-i-s-r-s-2-разреш-на-строит.validations.застройщОрг.__caption__',
     validators: [
       validator('ds-error'),
       validator('has-many'),
@@ -73,9 +73,6 @@ export let defineProjections = function (modelClass) {
     объектСтроит: hasMany('i-i-s-r-s-2-объект-строит', 'Объект строит', {
       наименование: attr('Наименование', { index: 0 }),
       адрес: attr('Адрес', { index: 1 })
-    }),
-    застройщик: hasMany('i-i-s-r-s-2-застройщик', 'Застройщик', {
-      
     })
   });
 

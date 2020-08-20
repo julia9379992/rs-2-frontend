@@ -11,6 +11,7 @@ moduleForModel('i-i-s-r-s-2-застройщик', 'Unit | Serializer | i-i-s-r-
 
     'transform:i-i-s-r-s-2-t-вид-разрешения',
 
+    'model:i-i-s-r-s-2-застройщ-орг',
     'model:i-i-s-r-s-2-застройщик',
     'model:i-i-s-r-s-2-объект-строит',
     'model:i-i-s-r-s-2-организация',

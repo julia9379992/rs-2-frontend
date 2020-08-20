@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISRS_2ЗастройщОрг",
+  "modelName": "i-i-s-r-s-2-застройщ-орг",
+  "className": "ЗастройщОрг",
+  "nameSpace": "IIS.RS_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "описание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организЗастр",
+      "relatedTo": "i-i-s-r-s-2-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "разрешение",
+      "relatedTo": "i-i-s-r-s-2-разреш-на-строит",
+      "inverse": "застройщОрг"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗастройщикE",
+      "modelName": "i-i-s-r-s-2-застройщ-орг",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

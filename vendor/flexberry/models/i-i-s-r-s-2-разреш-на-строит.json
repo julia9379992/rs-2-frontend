@@ -60,8 +60,8 @@
       "inverse": "разрешение"
     },
     {
-      "name": "застройщик",
-      "relatedTo": "i-i-s-r-s-2-застройщик",
+      "name": "застройщОрг",
+      "relatedTo": "i-i-s-r-s-2-застройщ-орг",
       "inverse": "разрешение"
     }
   ],
@@ -108,13 +108,6 @@
           "caption": "Объект строит",
           "name": "объектСтроит",
           "relatedTo": "i-i-s-r-s-2-объект-строит",
-          "inverse": null
-        },
-        {
-          "projectionName": "ЗастройщикE",
-          "caption": "Застройщик",
-          "name": "застройщик",
-          "relatedTo": "i-i-s-r-s-2-застройщик",
           "inverse": null
         }
       ]

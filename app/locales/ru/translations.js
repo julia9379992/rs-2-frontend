@@ -5,6 +5,7 @@ import IISRS_2ОрганизацияLForm from './forms/i-i-s-r-s-2-органи
 import IISRS_2РазрешНаСтроитLForm from './forms/i-i-s-r-s-2-разреш-на-строит-l';
 import IISRS_2ОрганизацияEForm from './forms/i-i-s-r-s-2-организация-e';
 import IISRS_2РазрешНаСтроитEForm from './forms/i-i-s-r-s-2-разреш-на-строит-e';
+import IISRS_2ЗастройщОргModel from './models/i-i-s-r-s-2-застройщ-орг';
 import IISRS_2ЗастройщикModel from './models/i-i-s-r-s-2-застройщик';
 import IISRS_2ОбъектСтроитModel from './models/i-i-s-r-s-2-объект-строит';
 import IISRS_2ОрганизацияModel from './models/i-i-s-r-s-2-организация';
@@ -15,6 +16,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
+    'i-i-s-r-s-2-застройщ-орг': IISRS_2ЗастройщОргModel,
     'i-i-s-r-s-2-застройщик': IISRS_2ЗастройщикModel,
     'i-i-s-r-s-2-объект-строит': IISRS_2ОбъектСтроитModel,
     'i-i-s-r-s-2-организация': IISRS_2ОрганизацияModel,

@@ -91,18 +91,4 @@
     }}
     {{flexberry-validationmessage error=(v-get validationObject "объектСтроит" "messages")}}
   </div>
-  <div class="field">
-    <label>{{t "forms.i-i-s-r-s-2-разреш-на-строит-e.застройщик-caption"}}</label>
-    {{flexberry-groupedit
-      componentName="застройщикGroupEdit"
-      mainModelProjection=modelProjection
-      modelProjection=modelProjection.attributes.застройщик
-      content=model.застройщик
-      readonly=readonly
-      orderable=false
-      class=(if (v-get validationObject "застройщик" "isInvalid") "error")
-      data-test-i-i-s-r-s-2-разреш-на-строит-e-----------=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationObject "застройщик" "messages")}}
-  </div>
 </form>

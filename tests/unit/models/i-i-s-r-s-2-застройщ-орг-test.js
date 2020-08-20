@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-r-s-2-разреш-на-строит', 'Unit | Model | i-i-s-r-s-2-разреш-на-строит', {
+moduleForModel('i-i-s-r-s-2-застройщ-орг', 'Unit | Model | i-i-s-r-s-2-застройщ-орг', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-r-s-2-застройщ-орг',
