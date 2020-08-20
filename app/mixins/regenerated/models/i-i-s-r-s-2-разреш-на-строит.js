@@ -75,7 +75,7 @@ export let defineProjections = function (modelClass) {
       адрес: attr('Адрес', { index: 1 })
     }),
     застройщик: hasMany('i-i-s-r-s-2-застройщик', 'Застройщик', {
-      основной: attr('Основной', { index: 0 })
+      
     })
   });
 

@@ -7,9 +7,9 @@
   "parentClassName": null,
   "attrs": [
     {
-      "name": "основной",
+      "name": "описание",
       "type": "string",
-      "flexberryType": "boolean",
+      "flexberryType": "string",
       "notNull": false,
       "defaultValue": "",
       "stored": true,
@@ -37,14 +37,7 @@
     {
       "name": "ЗастройщикE",
       "modelName": "i-i-s-r-s-2-застройщик",
-      "attrs": [
-        {
-          "name": "основной",
-          "caption": "Основной",
-          "hidden": false,
-          "index": 0
-        }
-      ],
+      "attrs": [],
       "belongsTo": [],
       "hasMany": []
     }
